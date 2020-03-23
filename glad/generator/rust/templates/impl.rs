@@ -5,7 +5,7 @@ pub use self::functions::*;
 
 use std::os::raw;
 
-pub struct FnPtr {
+pub(crate) struct FnPtr {
     ptr: *const raw::c_void,
     is_loaded: bool
 }
